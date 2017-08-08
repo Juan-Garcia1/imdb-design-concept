@@ -1,0 +1,138 @@
+/*************
+HEADER & NAV
+**************/
+header{
+  height:600px;
+  background:linear-gradient(0deg, rgba(0,0,0,.3), rgba(0,0,0,.3)), url("/images/the-martian.jpg")no-repeat center center;
+  background-size:cover;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  nav{
+    padding:.40em 1em;
+    display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    .logo{
+      width:4.8em;
+      height:4.8em;
+      cursor:pointer;
+    }
+    .nav{
+      text-transform:uppercase;
+      color:$white;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+              justify-content:center;
+      li{
+        font-size:.90em;
+        padding:0 1em;
+        cursor:pointer;
+        transition:color .25s ease;
+        &:hover{
+          color:$yellow;
+        }
+      }
+      .active{
+        color:$yellow;
+      }
+    }
+    .user{
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+              justify-content:space-between;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+              align-items:center;
+      width:80px;
+      .user-settings{
+        color:lighten($gray,35%);
+        cursor:pointer;
+        &:hover{
+          color:$gray;
+        }
+      }
+      .user-icon{
+        width:50px;
+        border-radius:50px;
+        cursor:pointer;
+      }
+    }
+  }
+  .movie-info{
+    margin-top:auto;
+    margin-bottom:auto;
+    text-transform:uppercase;
+    color:$white;
+    width:400px;
+    margin-left:10em;
+    h1{
+      font-size:3.8em;
+      line-height:1.2;
+    }
+    .genre{
+      list-style:none;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-pack:start;
+      -ms-flex-pack:start;
+              justify-content:flex-start;
+      margin-bottom:1.5em;
+      li{
+        padding-right:.90em;
+        padding-left: .80em;
+        font-size:.75em;
+      }
+    }
+    button{
+      cursor:pointer;
+      border:0;
+      padding:1em 1.5em;
+      border-radius:20px;
+      background:lighten($yellow,6%);
+      text-transform:uppercase;
+      font-weight:600;
+      font-size:.75em;
+      margin-bottom:8.5em;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+              justify-content:space-between;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+              align-items:center;
+      .fa-play-circle-o{
+        font-size:1.7em;
+        margin-left:.50em;
+      }
+    }
+    h3,h4{
+      font-weight:200;
+    }
+    h3{
+      text-transform:initial;
+    }
+    h4{
+      color:$yellow;
+    }
+  }
+}

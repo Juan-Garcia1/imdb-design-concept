@@ -1,0 +1,56 @@
+/************
+FOOTER
+************/
+footer{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+          flex-direction:column;
+  background-color:$white;
+  div{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+            align-items:center;
+    padding:1em;
+    color:lighten($gray,30%);
+    h3{
+      -webkit-box-flex:1;
+      -ms-flex:1;
+      flex:1;
+    }
+    .social-links{
+      i{
+        padding:0 .80em;
+        font-size:1.3em;
+        cursor:pointer;
+        &:hover{
+          color:darken($gray,10%);
+        }
+      }
+    }
+    p{
+      text-transform:uppercase;
+      font-size:.90em;
+      text-align:right;
+
+      -webkit-box-flex:1;
+      -ms-flex:1;
+      flex:1;
+    }
+  }
+  a{
+    text-decoration:none;
+    color:$yellow;
+    text-transform:uppercase;
+    font-size:.70em;
+    border-top:solid 1px lighten($gray,50%);
+    text-align:center;
+    padding:.50em;
+  }
+}

@@ -1,0 +1,114 @@
+/**********************
+    MAIN (MOVIES)
+***********************/
+main{
+  width:800px;
+  background:$light-background;
+  margin:auto;
+  transform:translateY(-5%);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  padding:1.5em 2em;
+  .options{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    text-align:center;
+    text-transform:uppercase;
+    margin-bottom:2em;
+    .active{
+      color:$yellow;
+      border-bottom:solid 2px $yellow;
+    }
+    li{
+      -webkit-box-flex:1;
+      -ms-flex:1;
+      flex:1;
+      padding-bottom:1em;
+      border-bottom:solid 1px lightgray;
+      font-weight:600;
+      font-size:.80em;
+      color:$gray;
+      cursor:pointer;
+      &:hover{
+        color:$yellow;
+        border-bottom-color:$yellow;
+        border-bottom-width:2px;
+      }
+    }
+  }
+  section{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+          align-items:center;
+  figure{
+    background-color:rgb(255,255,255);
+    width:14em;
+    margin:.50em;
+    box-shadow:0 5px 15px gray;
+    position:relative;
+    transition: 1s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img{
+      height:21em;
+    }
+    figcaption{
+      line-height:2;
+      padding:0 .80em;
+      height:90px;
+      h5{
+        text-transform:uppercase;
+        font-weight:600;
+        color:$gray;
+      }
+      p{
+        text-transform:capitalize;
+        font-size:.70em;
+        font-weight:600;
+        color:$yellow;
+      }
+      .rating{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+                align-items:center;
+        .fa-heart{
+          color:rgb(250,80,80);
+          margin:.50em .50em .50em 0;
+        }
+      }
+      button{
+        border:0;
+        cursor:pointer;
+        color:$white;
+        background-color:rgb(204, 204, 0);
+        -webkit-clip-path: polygon(74% 100%, 100% 100%, 100% 65%);
+clip-path: polygon(74% 100%, 100% 100%, 100% 65%);
+        position:absolute;
+        bottom:0;
+        right:0;
+        width:150px;
+        height:130px;
+        direction:flex;
+        -webkit-box-pack:end;
+        -ms-flex-pack:end;
+                justify-content:flex-end;
+        .fa-plus{
+          position:absolute;
+          bottom:5%;
+          right:5%;
+        }
+      }
+    }
+  }
+}
+}
