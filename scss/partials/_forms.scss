@@ -1,0 +1,133 @@
+/*
+RANGE & SEARCH FORMS
+*/
+#forms {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  .buttons {
+    margin-right: 10px;
+    align-self: flex-end;
+    .fa-navicon, .fa-th {
+      padding: 8px;
+      color: lightgray;
+      font-style: 18px;
+    }
+  }
+}
+
+#range-form {
+  flex: 1;
+  margin-right: 5px;
+  font-size: 12px;
+  p {
+    letter-spacing: 1px;
+    // font-style: 12px;
+    font-weight: bold;
+    color: lighten(black, 30%);
+  }
+  .group {
+    display: flex;
+    align-items: center;
+    #range {
+      -webkit-appearance:none;
+      cursor: pointer;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-right: 10px;
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $yellow;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    #results {
+      width: 28px;
+      text-align: center;
+      font-style: 13px;
+      padding: 2px 4px;
+      border-radius: 4px;
+      background: white;
+      box-shadow: 0 2px 5px 1px lightgray;
+    }
+  }
+}
+
+#search-form {
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  position: relative;
+  #search {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 2px lightgray;
+    padding: 5px 20px 5px 10px;
+    color: gray;
+    transition: border-bottom-color .3s;
+    &:focus {
+      outline: none;
+      border-bottom-color: $yellow;
+    }
+  }
+  .fa-search {
+    color: lightgray;
+    position: absolute;
+    right: 0;
+    padding-right: 8px;
+    transform: rotate(95deg);
+    -webkit-transform: rotate(95deg);
+    -ms-transform: rotate(95deg);
+    padding: 0;
+  }
+}
+
+/*
+CUSTOM SLIDER
+*/
+#forms #range-form .group #range {
+  -webkit-appearance: none;
+  outline: none;
+  background: $yellow;
+  height: 3px;
+  border-radius: 5px;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $yellow;
+  }
+}
+
+/* FIREFOX */
+#range::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $yellow;
+  cursor: pointer;
+}
+
+#range::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: $yellow;
+  border-radius: 5px;
+}

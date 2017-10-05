@@ -15,7 +15,7 @@ main{
     display:flex;
     text-align:center;
     text-transform:uppercase;
-    margin-bottom:2em;
+    // margin-bottom:2em;
     .active{
       color:$yellow;
       border-bottom:solid 2px $yellow;
@@ -52,10 +52,10 @@ main{
     margin:.50em;
     box-shadow:0 5px 15px gray;
     position:relative;
-    transition: 1s ease;
-    &:hover {
-      transform: scale(1.05);
-    }
+    // transition: 1s ease;
+    // &:hover {
+    //   transform: scale(1.05);
+    // }
     img{
       height:21em;
     }
