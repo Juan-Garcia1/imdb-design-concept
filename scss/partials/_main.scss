@@ -86,29 +86,18 @@ main{
           margin:.50em .50em .50em 0;
         }
       }
-      button{
-        border:0;
-        cursor:pointer;
-        color:$white;
-        background-color:rgb(204, 204, 0);
-        -webkit-clip-path: polygon(74% 100%, 100% 100%, 100% 65%);
-clip-path: polygon(74% 100%, 100% 100%, 100% 65%);
-        position:absolute;
-        bottom:0;
-        right:0;
-        width:150px;
-        height:130px;
-        direction:flex;
-        -webkit-box-pack:end;
-        -ms-flex-pack:end;
-                justify-content:flex-end;
-        .fa-plus{
+        button{
+          border:0;
+          font-size: 17px;
+          cursor: pointer;
+          color:$yellow;
+          background-color:white;
           position:absolute;
-          bottom:5%;
-          right:5%;
-        }
+          bottom:0;
+          right:0;
+          padding: 8px;
+          }
       }
     }
   }
-}
 }
