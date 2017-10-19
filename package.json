@@ -1,0 +1,23 @@
+{
+  "name": "imdb-design-concept",
+  "version": "1.0.0",
+  "description": "Recreated the design concept I found on dribble from [George Vasyagin][dribbble]",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan-Garcia1/imdb-design-concept.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juan-Garcia1/imdb-design-concept/issues"
+  },
+  "homepage": "https://github.com/Juan-Garcia1/imdb-design-concept#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
